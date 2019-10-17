@@ -27,9 +27,6 @@
     <ClInclude Include="..\Codes\Constant.h">
       <Filter>98. Headers</Filter>
     </ClInclude>
-    <ClInclude Include="..\Codes\Include.h">
-      <Filter>98. Headers</Filter>
-    </ClInclude>
     <ClInclude Include="..\Codes\Struct.h">
       <Filter>98. Headers</Filter>
     </ClInclude>

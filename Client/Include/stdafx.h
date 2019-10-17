@@ -23,4 +23,6 @@
 #include <d3dx9.h>
 
 // Headers
-#include "Include.h"
+#include "Extern.h"
+#include "Struct.h"
+#include "Constant.h"

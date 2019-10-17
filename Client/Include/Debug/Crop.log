@@ -1,3 +1,3 @@
-﻿stdafx.obj : error LNK2005: "unsigned int WINCX" (?WINCX@@3IA)이(가) Crop.obj에 이미 정의되어 있습니다.
-stdafx.obj : error LNK2005: "unsigned int WINCY" (?WINCY@@3IA)이(가) Crop.obj에 이미 정의되어 있습니다.
-../Bin\Crop.exe : fatal error LNK1169: 여러 번 정의된 기호가 있습니다.
+﻿  stdafx.cpp
+  Crop.cpp
+  Crop.vcxproj -> D:\Crop\Client\Include\../Bin\Crop.exe

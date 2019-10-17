@@ -173,7 +173,6 @@
   <ItemGroup>
     <ClInclude Include="..\Codes\Constant.h" />
     <ClInclude Include="..\Codes\Extern.h" />
-    <ClInclude Include="..\Codes\Include.h" />
     <ClInclude Include="..\Codes\Struct.h" />
     <ClInclude Include="Crop.h" />
     <ClInclude Include="Resource.h" />
