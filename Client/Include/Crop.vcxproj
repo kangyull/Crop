@@ -171,8 +171,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\Codes\Base.h" />
     <ClInclude Include="..\Codes\Constant.h" />
     <ClInclude Include="..\Codes\Extern.h" />
+    <ClInclude Include="..\Codes\Function.h" />
+    <ClInclude Include="..\Codes\Macro.h" />
+    <ClInclude Include="..\Codes\MainGame.h" />
     <ClInclude Include="..\Codes\Struct.h" />
     <ClInclude Include="Crop.h" />
     <ClInclude Include="Resource.h" />
@@ -180,6 +184,7 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\Codes\MainGame.cpp" />
     <ClCompile Include="Crop.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>

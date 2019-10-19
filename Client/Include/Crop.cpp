@@ -4,6 +4,8 @@
 #include "stdafx.h"
 #include "Crop.h"
 
+#include "MainGame.h"
+
 #define MAX_LOADSTRING 100
 
 // 전역 변수:
@@ -22,10 +24,16 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
                      _In_ LPWSTR    lpCmdLine,
                      _In_ int       nCmdShow)
 {
+#ifdef _DEBUG
+	_CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);
+	//| _CRTDBG_DELAY_FREE_MEM_DF | _CRTDBG_CHECK_ALWAYS_DF
+#endif // _DEBUG
+
     UNREFERENCED_PARAMETER(hPrevInstance);
     UNREFERENCED_PARAMETER(lpCmdLine);
 
     // TODO: 여기에 코드를 입력합니다.
+	CMainGame* pMainGame = nullptr;
 
     // 전역 문자열을 초기화합니다.
     LoadStringW(hInstance, IDS_APP_TITLE, szTitle, MAX_LOADSTRING);
@@ -40,17 +48,44 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
 
     HACCEL hAccelTable = LoadAccelerators(hInstance, MAKEINTRESOURCE(IDC_CROP));
 
+	pMainGame = CMainGame::Create();
+	if (nullptr == pMainGame)
+	{
+		return FALSE;
+	}
+
     MSG msg;
+	ZeroMemory(&msg, sizeof(MSG));
 
     // 기본 메시지 루프입니다:
-    while (GetMessage(&msg, nullptr, 0, 0))
-    {
-        if (!TranslateAccelerator(msg.hwnd, hAccelTable, &msg))
-        {
-            TranslateMessage(&msg);
-            DispatchMessage(&msg);
-        }
-    }
+	while (true)
+	{
+		if (WM_QUIT == msg.message)
+		{
+			break;
+		}
+
+		if (PeekMessage(&msg, nullptr, 0, 0, PM_REMOVE))
+		{
+			if (!TranslateAccelerator(msg.hwnd, hAccelTable, &msg))
+			{
+				TranslateMessage(&msg);
+				DispatchMessage(&msg);
+			}
+		}
+
+		if (FAILED(pMainGame->update()))
+		{
+			// 에러 처리
+		}
+
+		if (FAILED(pMainGame->render()))
+		{
+			// 에러 처리
+		}
+	}
+    
+	SafeRelease(pMainGame);
 
     return (int) msg.wParam;
 }

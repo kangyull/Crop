@@ -22,7 +22,21 @@
 #include <d3d9.h>
 #include <d3dx9.h>
 
+// Console Debug
+#ifdef _DEBUG
+#include <iostream>
+#include <conio.h>
+
+#ifdef UNICODE
+#pragma comment(linker,"/entry:wWinMainCRTStartup /subsystem:console")
+#else
+#pragma comment(linker,"/entry:WinMainCRTStartup /subsystem:console")
+#endif
+#endif // _DEBUG
+
 // Headers
+#include "Macro.h"
 #include "Extern.h"
 #include "Struct.h"
 #include "Constant.h"
+#include "Function.h"

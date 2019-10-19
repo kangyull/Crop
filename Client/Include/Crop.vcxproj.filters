@@ -10,6 +10,9 @@
     <Filter Include="98. Headers">
       <UniqueIdentifier>{6e8b3257-6c9d-426a-ba9c-bec58ba8c27f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="97. Base">
+      <UniqueIdentifier>{8545d9bb-3b99-430e-97f2-30eea1baf1b6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Crop.h">
@@ -33,6 +36,18 @@
     <ClInclude Include="..\Codes\Extern.h">
       <Filter>98. Headers</Filter>
     </ClInclude>
+    <ClInclude Include="..\Codes\Function.h">
+      <Filter>98. Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Codes\Base.h">
+      <Filter>97. Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Codes\Macro.h">
+      <Filter>98. Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Codes\MainGame.h">
+      <Filter>00. MainGame</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Crop.cpp">
@@ -40,6 +55,9 @@
     </ClCompile>
     <ClCompile Include="stdafx.cpp">
       <Filter>99. Default</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Codes\MainGame.cpp">
+      <Filter>00. MainGame</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
