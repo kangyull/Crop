@@ -10,9 +10,6 @@
     <Filter Include="98. Headers">
       <UniqueIdentifier>{6e8b3257-6c9d-426a-ba9c-bec58ba8c27f}</UniqueIdentifier>
     </Filter>
-    <Filter Include="97. Base">
-      <UniqueIdentifier>{8545d9bb-3b99-430e-97f2-30eea1baf1b6}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Crop.h">
@@ -38,9 +35,6 @@
     </ClInclude>
     <ClInclude Include="..\Codes\Function.h">
       <Filter>98. Headers</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Codes\Base.h">
-      <Filter>97. Base</Filter>
     </ClInclude>
     <ClInclude Include="..\Codes\Macro.h">
       <Filter>98. Headers</Filter>

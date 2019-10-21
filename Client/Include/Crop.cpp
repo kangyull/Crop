@@ -5,6 +5,7 @@
 #include "Crop.h"
 
 #include "MainGame.h"
+#include "Engine_Include.h"
 
 #define MAX_LOADSTRING 100
 
@@ -85,7 +86,7 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
 		}
 	}
     
-	SafeRelease(pMainGame);
+	engine::SafeRelease(pMainGame);
 
     return (int) msg.wParam;
 }

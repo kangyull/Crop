@@ -1,6 +1,8 @@
 #include "stdafx.h"
 #include "MainGame.h"
 
+#include "Engine_Include.h"
+
 CMainGame::CMainGame()
 {
 }
@@ -32,7 +34,7 @@ CMainGame* CMainGame::Create()
 	if (FAILED(pInstance->initalize()))
 	{
 		MSG_BOX(L"CMainGame Create Failed");
-		SafeRelease(pInstance);
+		engine::SafeRelease(pInstance);
 	}
 
 	return pInstance;
