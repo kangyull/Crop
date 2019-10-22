@@ -9,7 +9,7 @@ namespace engine
 
 		if (instance)
 		{
-			dwRef = instance->release();
+			dwRef = instance->Release();
 
 			if (0 == dwRef)
 			{

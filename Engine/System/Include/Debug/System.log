@@ -1,4 +1,6 @@
-﻿  System.vcxproj -> D:\Crop\Engine\System\Include\../Bin\System.dll
+﻿  GraphicDevice.cpp
+     ../Bin\System.lib 라이브러리 및 ../Bin\System.exp 개체를 생성하고 있습니다.
+  System.vcxproj -> D:\Crop\Engine\System\Include\../Bin\System.dll
   .\Engine\System\Bin\System.dll
   1개 파일이 복사되었습니다.
   .\Engine\System\Bin\System.lib

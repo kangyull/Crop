@@ -17,7 +17,12 @@ CBuffer::~CBuffer()
 {
 }
 
-CComponent* CBuffer::Clone_Component(void* pArg)
+HRESULT CBuffer::initialize()
+{
+	return NOERROR;
+}
+
+CComponent* CBuffer::cloneComponent(void* pArg)
 {
 	return nullptr;
 }

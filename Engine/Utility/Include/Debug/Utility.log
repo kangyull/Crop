@@ -1,14 +1,17 @@
-﻿  Utility.vcxproj -> D:\Crop\Engine\Utility\Include\../Bin\Utility.dll
+﻿  Buffer.cpp
+  Component.cpp
+  코드를 생성하고 있습니다...
+  Utility.vcxproj -> D:\Crop\Engine\Utility\Include\../Bin\Utility.dll
   .\Engine\Utility\Bin\Utility.dll
   1개 파일이 복사되었습니다.
   .\Engine\Utility\Bin\Utility.lib
   1개 파일이 복사되었습니다.
   파일을 찾을 수 없습니다-*.fx
   0개 파일이 복사되었습니다.
+  0개 파일이 복사되었습니다.
   파일을 찾을 수 없습니다-Utility.dll
   0개 파일이 복사되었습니다.
   파일을 찾을 수 없습니다-Utility.lib
-  0개 파일이 복사되었습니다.
   .\Engine\Headers\Engine_Exports.h
   .\Engine\Headers\Engine_Function.h
   .\Engine\Headers\Engine_Include.h

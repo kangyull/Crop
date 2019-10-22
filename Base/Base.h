@@ -7,12 +7,12 @@ protected:
 	virtual ~CBase() = default;
 
 public:
-	inline virtual unsigned long addRef()
+	inline virtual unsigned long AddRef()
 	{
 		return ++m_dwRefCnt;
 	}
 
-	inline unsigned long release()
+	inline unsigned long Release()
 	{
 		if (0 == m_dwRefCnt)
 		{

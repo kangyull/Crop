@@ -14,17 +14,17 @@ CMainGame::~CMainGame()
 
 HRESULT CMainGame::initalize()
 {
-	return S_OK;
+	return NOERROR;
 }
 
 HRESULT CMainGame::update()
 {
-	return S_OK;
+	return NOERROR;
 }
 
 HRESULT CMainGame::render()
 {
-	return S_OK;
+	return NOERROR;
 }
 
 CMainGame* CMainGame::Create()

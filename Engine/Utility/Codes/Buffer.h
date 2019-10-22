@@ -12,7 +12,8 @@ protected:
 	virtual ~CBuffer();
 
 public:
-	virtual CComponent*	Clone_Component(void* pArg)	override;
+	virtual HRESULT		initialize()				override;
+	virtual CComponent*	cloneComponent(void* pArg)	override;
 
 protected:
 	virtual void		free()						override;
